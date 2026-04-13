@@ -1,0 +1,21 @@
+1. How do you check the Linux kernel and operating system version?
+The kernel version can be checked using uname -r, while OS and distribution details are found in /etc/os-release.
+This information is important for troubleshooting compatibility and package issues.
+2. How do you list all files including hidden files?
+ls -la
+Hidden files usually store application or user configuration and begin with a dot (.).
+
+3. How do you view a large file efficiently?
+Instead of opening the entire file, use:
+
+less filename for paginated viewing
+head or tail to view specific sections
+This avoids performance issues with large logs.
+
+4. A log file is updating continuously. How do you monitor it?
+tail -f /var/log/syslog
+This is commonly used in production environments to monitor live system or application logs.
+
+5. How do you search for a specific word inside a file?
+grep "error" filename
+grep is widely used for identifying errors or patterns in log files.
